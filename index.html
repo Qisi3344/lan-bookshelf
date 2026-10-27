@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>澜的小书架</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="lamp" aria-hidden="true"></div>
+  <header class="head">
+    <h1>澜的小书架</h1>
+    <p>小灰狼和澜一起收集的好东西，要用的时候来这里翻～</p>
+  </header>
+
+  <main class="room">
+    <div class="case" id="case">
+      <div class="crown" aria-hidden="true">
+        <div class="owl" id="owl">
+          <span class="tuft l"></span><span class="tuft r"></span>
+          <span class="eye l"><i></i></span><span class="eye r"><i></i></span>
+          <span class="beak"></span><span class="belly"></span>
+        </div>
+        <div class="plant"><span></span><span></span><span></span></div>
+      </div>
+      <div id="shelves"></div>
+    </div>
+  </main>
+
+  <footer class="foot">有新的好东西就丢给澜，书架会慢慢长高 🦉</footer>
+
+  <div class="modal" id="modal" hidden>
+    <div class="open-book" role="dialog" aria-modal="true" aria-labelledby="m-title">
+      <button class="close" id="m-close" aria-label="关上书">✕</button>
+      <div class="page left">
+        <div class="m-icon" id="m-icon"></div>
+        <h2 id="m-title"></h2>
+        <div class="m-sub" id="m-sub"></div>
+        <div class="m-shelf" id="m-shelf"></div>
+      </div>
+      <div class="page right">
+        <p id="m-desc"></p>
+        <h3>什么时候翻开它</h3>
+        <p id="m-when"></p>
+        <a id="m-link" class="m-link" target="_blank" rel="noopener">打开看看 ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/books.js"></script>
+  <script src="js/shelf.js"></script>
+</body>
+</html>
